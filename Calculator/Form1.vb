@@ -1,12 +1,15 @@
 ﻿Public Class Form1
+    'The two numbers to be calculated and the answer
     Dim number1, number2, answer As Long
+    ' Tells the program to go the next input box
     Dim numberInput As Boolean
-    Dim operatorIdentifier As Single
     ' 1 is add, 2 is subtract, 3 is multiply, 4 is divide
+    Dim operatorIdentifier As Single
 
 
 
 
+    'Buttons 1-9
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         If numberInput = False Then
             number1 = number1 * 10
@@ -141,13 +144,7 @@
         Label2.Text = number1
         Label1.Text = number2
     End Sub
-
-    Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
-        numberInput = True
-        operatorIdentifier = 1
-
-    End Sub
-
+    'Equals Button. Runs an operator based on the "operatorIdentifier" value
     Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
         If operatorIdentifier = 1 Then
             answer = number1 + number2
@@ -167,20 +164,10 @@
 
         Label3.Text = answer
     End Sub
-
-    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
-        number1 = 0
-        number2 = 0
-        answer = 0
-        numberInput = False
-        Label3.Text = answer
-        Label2.Text = number1
-        Label1.Text = number2
-
+    'Add, Subtract, Multiply, Subtract buttons
+    Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
+        numberInput = True
+        operatorIdentifier = 1
 
     End Sub
 
@@ -197,6 +184,18 @@
     Private Sub Button15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button15.Click
         numberInput = True
         operatorIdentifier = 4
+    End Sub
+    'Clears the labels and input variables
+    Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
+        number1 = 0
+        number2 = 0
+        answer = 0
+        numberInput = False
+        Label3.Text = answer
+        Label2.Text = number1
+        Label1.Text = number2
+
+
     End Sub
 
 
