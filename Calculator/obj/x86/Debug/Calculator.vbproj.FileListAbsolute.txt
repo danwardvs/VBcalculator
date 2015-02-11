@@ -1,0 +1,9 @@
+C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\bin\Debug\Calculator.xml
+C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\obj\x86\Debug\Calculator.vbproj.GenerateResource.Cache
+C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\obj\x86\Debug\Calculator.exe
+C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\obj\x86\Debug\Calculator.xml
+C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\obj\x86\Debug\Calculator.pdb
+C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\obj\x86\Debug\Calculator.Form1.resources
+C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\obj\x86\Debug\Calculator.Resources.resources

@@ -1,6 +1,10 @@
 ﻿Public Class Form1
     Dim number1, number2, answer As Long
     Dim numberInput As Boolean
+    Dim operatorIdentifier As Single
+    ' 1 is add, 2 is subtract, 3 is multiply, 4 is divide
+
+
 
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -138,21 +142,29 @@
         Label1.Text = number2
     End Sub
 
-    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-
-    End Sub
-
     Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
         numberInput = True
+        operatorIdentifier = 1
 
     End Sub
 
     Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
-        answer = number1 + number2
+        If operatorIdentifier = 1 Then
+            answer = number1 + number2
+        End If
+
+        If operatorIdentifier = 2 Then
+            answer = number1 - number2
+        End If
+
+        If operatorIdentifier = 3 Then
+            answer = number1 * number2
+        End If
+
+        If operatorIdentifier = 4 Then
+            answer = number1 / number2
+        End If
+
         Label3.Text = answer
     End Sub
 
@@ -169,6 +181,23 @@
         Label2.Text = number1
         Label1.Text = number2
 
+
     End Sub
+
+    Private Sub Button13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button13.Click
+        numberInput = True
+        operatorIdentifier = 2
+    End Sub
+
+    Private Sub Button14_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button14.Click
+        numberInput = True
+        operatorIdentifier = 3
+    End Sub
+
+    Private Sub Button15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button15.Click
+        numberInput = True
+        operatorIdentifier = 4
+    End Sub
+
 
 End Class
