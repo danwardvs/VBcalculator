@@ -431,4 +431,20 @@
             TextBox1.Text = answer
         End If
     End Sub
+
+    Private Sub Button30_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button30.Click
+        If numberInput = False Then
+            number1 = 3.14159265359
+            TextBox1.Text = number1
+        End If
+
+        If numberInput = True Then
+            number2 = 3.14159265359
+            TextBox1.Text = number2
+        End If
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadioButton1.CheckedChanged
+
+    End Sub
 End Class

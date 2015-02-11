@@ -52,6 +52,9 @@ Partial Class Form1
         Me.Button27 = New System.Windows.Forms.Button()
         Me.Button28 = New System.Windows.Forms.Button()
         Me.Button29 = New System.Windows.Forms.Button()
+        Me.Button30 = New System.Windows.Forms.Button()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'Button2
@@ -354,11 +357,46 @@ Partial Class Form1
         Me.Button29.Text = "x√"
         Me.Button29.UseVisualStyleBackColor = True
         '
+        'Button30
+        '
+        Me.Button30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button30.Location = New System.Drawing.Point(345, 194)
+        Me.Button30.Name = "Button30"
+        Me.Button30.Size = New System.Drawing.Size(37, 31)
+        Me.Button30.TabIndex = 42
+        Me.Button30.Text = "π"
+        Me.Button30.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(344, 12)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(64, 17)
+        Me.RadioButton1.TabIndex = 43
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Radians"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(344, 33)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(65, 17)
+        Me.RadioButton2.TabIndex = 44
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Degrees"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(560, 411)
+        Me.Controls.Add(Me.RadioButton2)
+        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.Button30)
         Me.Controls.Add(Me.Button29)
         Me.Controls.Add(Me.Button28)
         Me.Controls.Add(Me.Button27)
@@ -425,5 +463,8 @@ Partial Class Form1
     Friend WithEvents Button27 As System.Windows.Forms.Button
     Friend WithEvents Button28 As System.Windows.Forms.Button
     Friend WithEvents Button29 As System.Windows.Forms.Button
+    Friend WithEvents Button30 As System.Windows.Forms.Button
+    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
 
 End Class
