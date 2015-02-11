@@ -203,7 +203,7 @@
 
         End If
 
-        Label3.Text = answer
+
     End Sub
     'Add, Subtract, Multiply, Subtract buttons
     Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
@@ -236,9 +236,6 @@
         number2 = 0
         answer = 0
         numberInput = False
-        Label3.Text = answer
-        Label2.Text = number1
-        Label1.Text = number2
         TextBox1.Text = 0
 
 
@@ -254,36 +251,48 @@
 
     Private Sub Button20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button20.Click
         answer = number1 ^ 2
-        Label3.Text = answer
+
     End Sub
 
     Private Sub Button21_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button21.Click
         answer = number1 ^ 3
-        Label3.Text = answer
+
     End Sub
 
     Private Sub Button22_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         answer = number1 ^ 4
-        Label3.Text = answer
+
     End Sub
 
     Private Sub Button25_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button25.Click
         answer = Math.Sin(number1)
-        Label3.Text = answer
+
     End Sub
 
     Private Sub Button23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button23.Click
         answer = Math.Tan(number1)
-        Label3.Text = answer
+
     End Sub
 
     Private Sub Button24_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button24.Click
         answer = Math.Cos(number1)
-        Label3.Text = answer
+
     End Sub
 
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+        If numberInput = False Then
+            number1 = Val(TextBox1.Text)
+
+        End If
+        If numberInput = True Then
+            number2 = Val(TextBox1.Text)
+
+        End If
+
+    End Sub
+
+    Private Sub Button18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button18.Click
 
     End Sub
 End Class
