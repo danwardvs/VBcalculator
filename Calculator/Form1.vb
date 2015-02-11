@@ -282,17 +282,42 @@
     End Sub
 
     Private Sub Button25_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button25.Click
-        answer = Math.Sin(number1)
+        If numberInput = False Then
+            answer = Math.Sin(number1)
+            TextBox1.Text = answer
+        End If
+
+        If numberInput = True Then
+            answer = Math.Sin(number2)
+            TextBox1.Text = answer
+        End If
 
     End Sub
 
     Private Sub Button23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button23.Click
-        answer = Math.Tan(number1)
+        If numberInput = False Then
+            answer = Math.Tan(number1)
+            TextBox1.Text = answer
+        End If
+
+        If numberInput = True Then
+            answer = Math.Tan(number2)
+            TextBox1.Text = answer
+        End If
 
     End Sub
 
     Private Sub Button24_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button24.Click
-        answer = Math.Cos(number1)
+        If numberInput = False Then
+            answer = Math.Cos(number1)
+            TextBox1.Text = answer
+        End If
+
+        If numberInput = True Then
+            answer = Math.Cos(number2)
+            TextBox1.Text = answer
+        End If
+
 
     End Sub
 
@@ -319,5 +344,50 @@
             answer = number2 * (-1)
             TextBox1.Text = answer
         End If
+    End Sub
+
+    Private Sub Button26_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button26.Click
+        If numberInput = False Then
+            answer = Math.Asin(number1)
+            TextBox1.Text = answer
+        End If
+
+        If numberInput = True Then
+            answer = Math.Asin(number2)
+            TextBox1.Text = answer
+        End If
+    End Sub
+
+    Private Sub Button22_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button22.Click
+        If numberInput = False Then
+            answer = Math.Acos(number1)
+            TextBox1.Text = answer
+        End If
+
+        If numberInput = True Then
+            answer = Math.Acos(number2)
+            TextBox1.Text = answer
+        End If
+    End Sub
+
+    Private Sub Button19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button19.Click
+        If numberInput = False Then
+            answer = Math.Atan(number1)
+            TextBox1.Text = answer
+        End If
+
+        If numberInput = True Then
+            answer = Math.Atan(number2)
+            TextBox1.Text = answer
+        End If
+    End Sub
+
+    Private Sub Button27_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button27.Click
+        If Val(TextBox1.Text) = Int(Val(TextBox1.Text)) Then
+            TextBox1.Text = TextBox1.Text + "."
+        End If
+
+
+        
     End Sub
 End Class
