@@ -1,6 +1,6 @@
 ﻿Public Class Form1
     'The two numbers to be calculated and the answer
-    Dim number1, number2, answer As Long
+    Dim number1, number2, answer As Single
     ' Tells the program to go the next input box
     Dim numberInput As Boolean
     ' 1 is add, 2 is subtract, 3 is multiply, 4 is divide
@@ -162,6 +162,10 @@
             answer = number1 / number2
         End If
 
+        If operatorIdentifier = 5 Then
+            answer = number1 ^ number2
+        End If
+
         Label3.Text = answer
     End Sub
     'Add, Subtract, Multiply, Subtract buttons
@@ -199,4 +203,23 @@
     End Sub
 
 
+    Private Sub Button16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button16.Click
+        numberInput = True
+        operatorIdentifier = 5
+    End Sub
+
+    Private Sub Button20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button20.Click
+        answer = number1 ^ 2
+        Label3.Text = answer
+    End Sub
+
+    Private Sub Button21_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button21.Click
+        answer = number1 ^ 3
+        Label3.Text = answer
+    End Sub
+
+    Private Sub Button22_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button22.Click
+        answer = number1 ^ 4
+        Label3.Text = answer
+    End Sub
 End Class
