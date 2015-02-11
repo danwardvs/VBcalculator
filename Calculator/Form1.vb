@@ -1,6 +1,6 @@
 ﻿Public Class Form1
     'The two numbers to be calculated and the answer
-    Dim number1, number2, answer As Single
+    Dim number1, number2, answer As Double
     ' Tells the program to go the next input box
     Dim numberInput As Boolean
     ' 1 is add, 2 is subtract, 3 is multiply, 4 is divide
@@ -218,8 +218,35 @@
         Label3.Text = answer
     End Sub
 
-    Private Sub Button22_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button22.Click
+    Private Sub Button22_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         answer = number1 ^ 4
         Label3.Text = answer
     End Sub
+
+    Private Sub Button25_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button25.Click
+        answer = Math.Sin(number1)
+    End Sub
+
+    Private Sub Button23_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button23.Click
+        answer = Math.Tan(number1)
+    End Sub
+
+    Private Sub Button24_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button24.Click
+        answer = Math.Cos(number1)
+    End Sub
+
+    Private Sub Button17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button17.Click
+        If numberInput = False Then
+            number1 = number1 * 10
+        End If
+
+        If numberInput = True Then
+            number2 = number2 * 10
+        End If
+
+        Label2.Text = number1
+        Label1.Text = number2
+    End Sub
+
+
 End Class
