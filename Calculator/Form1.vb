@@ -250,12 +250,29 @@
     End Sub
 
     Private Sub Button20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button20.Click
-        answer = number1 ^ 2
+        If numberInput = False Then
+            answer = number1 ^ 2
+            TextBox1.Text = answer
+        End If
+
+        If numberInput = True Then
+            answer = number2 ^ 2
+            TextBox1.Text = answer
+        End If
+
 
     End Sub
 
     Private Sub Button21_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button21.Click
-        answer = number1 ^ 3
+        If numberInput = False Then
+            answer = number1 ^ 3
+            TextBox1.Text = answer
+        End If
+
+        If numberInput = True Then
+            answer = number2 ^ 3
+            TextBox1.Text = answer
+        End If
 
     End Sub
 
@@ -293,6 +310,14 @@
     End Sub
 
     Private Sub Button18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button18.Click
+        If numberInput = False Then
+            answer = number1 * (-1)
+            TextBox1.Text = answer
+        End If
 
+        If numberInput = True Then
+            answer = number2 * (-1)
+            TextBox1.Text = answer
+        End If
     End Sub
 End Class
