@@ -199,6 +199,13 @@
             number2 = 0
             numberInput = False
             TextBox1.Text = number1
+        End If
+        If operatorIdentifier = 6 Then
+            answer = number1 ^ (1 / number2)
+            number1 = answer
+            number2 = 0
+            numberInput = False
+            TextBox1.Text = number1
 
 
         End If
@@ -273,11 +280,6 @@
             answer = number2 ^ 3
             TextBox1.Text = answer
         End If
-
-    End Sub
-
-    Private Sub Button22_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        answer = number1 ^ 4
 
     End Sub
 
@@ -382,12 +384,51 @@
         End If
     End Sub
 
-    Private Sub Button27_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button27.Click
+    Private Sub Button27_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         If Val(TextBox1.Text) = Int(Val(TextBox1.Text)) Then
-            TextBox1.Text = TextBox1.Text + "."
+            If numberInput = False Then
+
+                TextBox1.Text = number1 + "."
+            End If
+
+            If numberInput = True Then
+                TextBox1.Text = number2 + "."
+            End If
         End If
 
 
-        
+
+    End Sub
+
+    Private Sub Button29_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button29.Click
+
+        numberInput = True
+        operatorIdentifier = 6
+        TextBox1.Text = 0
+
+    End Sub
+
+    Private Sub Button27_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button27.Click
+        If numberInput = False Then
+            answer = Math.Sqrt(number1)
+            TextBox1.Text = answer
+        End If
+
+        If numberInput = True Then
+            answer = Math.Sqrt(number2)
+            TextBox1.Text = answer
+        End If
+    End Sub
+
+    Private Sub Button28_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button28.Click
+        If numberInput = False Then
+            answer = number1 ^ (1 / 3)
+            TextBox1.Text = answer
+        End If
+
+        If numberInput = True Then
+            answer = number2 ^ (1 / 3)
+            TextBox1.Text = answer
+        End If
     End Sub
 End Class

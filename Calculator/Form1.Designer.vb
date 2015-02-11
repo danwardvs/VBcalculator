@@ -50,6 +50,8 @@ Partial Class Form1
         Me.Button22 = New System.Windows.Forms.Button()
         Me.Button26 = New System.Windows.Forms.Button()
         Me.Button27 = New System.Windows.Forms.Button()
+        Me.Button28 = New System.Windows.Forms.Button()
+        Me.Button29 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button2
@@ -145,9 +147,9 @@ Partial Class Form1
         'Button10
         '
         Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(264, 194)
+        Me.Button10.Location = New System.Drawing.Point(263, 263)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(75, 131)
+        Me.Button10.Size = New System.Drawing.Size(75, 132)
         Me.Button10.TabIndex = 12
         Me.Button10.Text = "="
         Me.Button10.UseVisualStyleBackColor = True
@@ -157,7 +159,7 @@ Partial Class Form1
         Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.Location = New System.Drawing.Point(264, 125)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(75, 63)
+        Me.Button11.Size = New System.Drawing.Size(75, 132)
         Me.Button11.TabIndex = 13
         Me.Button11.Text = "+"
         Me.Button11.UseVisualStyleBackColor = True
@@ -165,7 +167,7 @@ Partial Class Form1
         'Button12
         '
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(264, 331)
+        Me.Button12.Location = New System.Drawing.Point(183, 332)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(75, 63)
         Me.Button12.TabIndex = 16
@@ -324,19 +326,41 @@ Partial Class Form1
         '
         'Button27
         '
-        Me.Button27.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button27.Location = New System.Drawing.Point(183, 331)
+        Me.Button27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button27.Location = New System.Drawing.Point(384, 88)
         Me.Button27.Name = "Button27"
-        Me.Button27.Size = New System.Drawing.Size(75, 63)
+        Me.Button27.Size = New System.Drawing.Size(37, 31)
         Me.Button27.TabIndex = 39
-        Me.Button27.Text = "."
+        Me.Button27.Text = "√"
         Me.Button27.UseVisualStyleBackColor = True
+        '
+        'Button28
+        '
+        Me.Button28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button28.Location = New System.Drawing.Point(423, 88)
+        Me.Button28.Name = "Button28"
+        Me.Button28.Size = New System.Drawing.Size(37, 31)
+        Me.Button28.TabIndex = 40
+        Me.Button28.Text = "3√"
+        Me.Button28.UseVisualStyleBackColor = True
+        '
+        'Button29
+        '
+        Me.Button29.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button29.Location = New System.Drawing.Point(345, 88)
+        Me.Button29.Name = "Button29"
+        Me.Button29.Size = New System.Drawing.Size(37, 31)
+        Me.Button29.TabIndex = 41
+        Me.Button29.Text = "x√"
+        Me.Button29.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(560, 411)
+        Me.Controls.Add(Me.Button29)
+        Me.Controls.Add(Me.Button28)
         Me.Controls.Add(Me.Button27)
         Me.Controls.Add(Me.Button19)
         Me.Controls.Add(Me.Button22)
@@ -399,5 +423,7 @@ Partial Class Form1
     Friend WithEvents Button22 As System.Windows.Forms.Button
     Friend WithEvents Button26 As System.Windows.Forms.Button
     Friend WithEvents Button27 As System.Windows.Forms.Button
+    Friend WithEvents Button28 As System.Windows.Forms.Button
+    Friend WithEvents Button29 As System.Windows.Forms.Button
 
 End Class
