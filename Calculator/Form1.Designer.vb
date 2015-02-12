@@ -417,22 +417,22 @@ Partial Class Form1
         '
         'Button33
         '
-        Me.Button33.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button33.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button33.Location = New System.Drawing.Point(466, 55)
         Me.Button33.Name = "Button33"
         Me.Button33.Size = New System.Drawing.Size(115, 31)
         Me.Button33.TabIndex = 47
-        Me.Button33.Text = "C>F"
+        Me.Button33.Text = "Fahrenheit to Celsius"
         Me.Button33.UseVisualStyleBackColor = True
         '
         'Button34
         '
-        Me.Button34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button34.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button34.Location = New System.Drawing.Point(466, 87)
         Me.Button34.Name = "Button34"
         Me.Button34.Size = New System.Drawing.Size(115, 31)
         Me.Button34.TabIndex = 48
-        Me.Button34.Text = "F>C"
+        Me.Button34.Text = "Celsius to Fahrenheit"
         Me.Button34.UseVisualStyleBackColor = True
         '
         'Button35

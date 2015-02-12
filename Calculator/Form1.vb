@@ -511,14 +511,15 @@
     Private Sub Button34_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button34.Click
         If numberInput = False Then
 
-            number1 = (5 / 9) * (number1 - 32)
+            number1 = (1.8 * number1) + 32
 
             TextBox1.Text = number1
         End If
 
         If numberInput = True Then
-            number2 = (5 / 9) * (number2 - 32)
-            TextBox1.Text = number2
+            number1 = (1.8 * number1) + 32
+
+            TextBox1.Text = number1
         End If
 
 
