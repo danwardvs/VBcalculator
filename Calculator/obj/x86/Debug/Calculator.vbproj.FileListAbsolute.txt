@@ -7,3 +7,15 @@ C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\obj\x86\Debug\Calculat
 C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\obj\x86\Debug\Calculator.pdb
 C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\obj\x86\Debug\Calculator.Form1.resources
 C:\Users\Danward\Documents\GitHub\VBcalculator\Calculator\obj\x86\Debug\Calculator.Resources.resources
+S:\Visual Studio 2010\VBcalculator-master\VBcalculator-master\Calculator\obj\x86\Debug\Calculator.exe
+S:\Visual Studio 2010\VBcalculator-master\VBcalculator-master\Calculator\obj\x86\Debug\Calculator.xml
+S:\Visual Studio 2010\VBcalculator-master\VBcalculator-master\Calculator\obj\x86\Debug\Calculator.pdb
+S:\Visual Studio 2010\VBcalculator-master\VBcalculator-master\Calculator\bin\Debug\Calculator.exe
+S:\Visual Studio 2010\VBcalculator-master\VBcalculator-master\Calculator\bin\Debug\Calculator.pdb
+S:\Visual Studio 2010\VBcalculator-master\VBcalculator-master\Calculator\bin\Debug\Calculator.xml
+S:\Visual Studio 2010\VBcalculator-master\VBcalculator-master\Calculator\obj\x86\Debug\Calculator.Form1.resources
+S:\Visual Studio 2010\VBcalculator-master\VBcalculator-master\Calculator\obj\x86\Debug\Calculator.Resources.resources
+S:\Visual Studio 2010\VBcalculator-master\VBcalculator-master\Calculator\obj\x86\Debug\Calculator.vbproj.GenerateResource.Cache
+C:\Users\Danward\Downloads\VBcalculator-master-2015-02-12 (1)\VBcalculator-master\Calculator\obj\x86\Debug\Calculator.exe
+C:\Users\Danward\Downloads\VBcalculator-master-2015-02-12 (1)\VBcalculator-master\Calculator\obj\x86\Debug\Calculator.xml
+C:\Users\Danward\Downloads\VBcalculator-master-2015-02-12 (1)\VBcalculator-master\Calculator\obj\x86\Debug\Calculator.pdb

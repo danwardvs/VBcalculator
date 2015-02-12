@@ -53,8 +53,14 @@ Partial Class Form1
         Me.Button28 = New System.Windows.Forms.Button()
         Me.Button29 = New System.Windows.Forms.Button()
         Me.Button30 = New System.Windows.Forms.Button()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.radioButtonRadians = New System.Windows.Forms.RadioButton()
+        Me.radioButtonDegrees = New System.Windows.Forms.RadioButton()
+        Me.Button31 = New System.Windows.Forms.Button()
+        Me.Button32 = New System.Windows.Forms.Button()
+        Me.Button33 = New System.Windows.Forms.Button()
+        Me.Button34 = New System.Windows.Forms.Button()
+        Me.Button35 = New System.Windows.Forms.Button()
+        Me.Button36 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button2
@@ -150,7 +156,7 @@ Partial Class Form1
         'Button10
         '
         Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(263, 263)
+        Me.Button10.Location = New System.Drawing.Point(264, 194)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 132)
         Me.Button10.TabIndex = 12
@@ -162,7 +168,7 @@ Partial Class Form1
         Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.Location = New System.Drawing.Point(264, 125)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(75, 132)
+        Me.Button11.Size = New System.Drawing.Size(75, 63)
         Me.Button11.TabIndex = 13
         Me.Button11.Text = "+"
         Me.Button11.UseVisualStyleBackColor = True
@@ -367,35 +373,101 @@ Partial Class Form1
         Me.Button30.Text = "π"
         Me.Button30.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'radioButtonRadians
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(344, 12)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(64, 17)
-        Me.RadioButton1.TabIndex = 43
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Radians"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.radioButtonRadians.AutoSize = True
+        Me.radioButtonRadians.Location = New System.Drawing.Point(344, 12)
+        Me.radioButtonRadians.Name = "radioButtonRadians"
+        Me.radioButtonRadians.Size = New System.Drawing.Size(64, 17)
+        Me.radioButtonRadians.TabIndex = 43
+        Me.radioButtonRadians.Text = "Radians"
+        Me.radioButtonRadians.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'radioButtonDegrees
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(344, 33)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(65, 17)
-        Me.RadioButton2.TabIndex = 44
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Degrees"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.radioButtonDegrees.AutoSize = True
+        Me.radioButtonDegrees.Checked = True
+        Me.radioButtonDegrees.Location = New System.Drawing.Point(344, 33)
+        Me.radioButtonDegrees.Name = "radioButtonDegrees"
+        Me.radioButtonDegrees.Size = New System.Drawing.Size(65, 17)
+        Me.radioButtonDegrees.TabIndex = 44
+        Me.radioButtonDegrees.TabStop = True
+        Me.radioButtonDegrees.Text = "Degrees"
+        Me.radioButtonDegrees.UseVisualStyleBackColor = True
+        '
+        'Button31
+        '
+        Me.Button31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button31.Location = New System.Drawing.Point(384, 194)
+        Me.Button31.Name = "Button31"
+        Me.Button31.Size = New System.Drawing.Size(37, 31)
+        Me.Button31.TabIndex = 45
+        Me.Button31.Text = "1/x"
+        Me.Button31.UseVisualStyleBackColor = True
+        '
+        'Button32
+        '
+        Me.Button32.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button32.Location = New System.Drawing.Point(264, 332)
+        Me.Button32.Name = "Button32"
+        Me.Button32.Size = New System.Drawing.Size(75, 63)
+        Me.Button32.TabIndex = 46
+        Me.Button32.Text = "CE"
+        Me.Button32.UseVisualStyleBackColor = True
+        '
+        'Button33
+        '
+        Me.Button33.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button33.Location = New System.Drawing.Point(466, 55)
+        Me.Button33.Name = "Button33"
+        Me.Button33.Size = New System.Drawing.Size(115, 31)
+        Me.Button33.TabIndex = 47
+        Me.Button33.Text = "C>F"
+        Me.Button33.UseVisualStyleBackColor = True
+        '
+        'Button34
+        '
+        Me.Button34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button34.Location = New System.Drawing.Point(466, 87)
+        Me.Button34.Name = "Button34"
+        Me.Button34.Size = New System.Drawing.Size(115, 31)
+        Me.Button34.TabIndex = 48
+        Me.Button34.Text = "F>C"
+        Me.Button34.UseVisualStyleBackColor = True
+        '
+        'Button35
+        '
+        Me.Button35.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button35.Location = New System.Drawing.Point(466, 125)
+        Me.Button35.Name = "Button35"
+        Me.Button35.Size = New System.Drawing.Size(115, 31)
+        Me.Button35.TabIndex = 49
+        Me.Button35.Text = "Feet>Inches"
+        Me.Button35.UseVisualStyleBackColor = True
+        '
+        'Button36
+        '
+        Me.Button36.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button36.Location = New System.Drawing.Point(466, 157)
+        Me.Button36.Name = "Button36"
+        Me.Button36.Size = New System.Drawing.Size(115, 31)
+        Me.Button36.TabIndex = 50
+        Me.Button36.Text = "Inches>Feet"
+        Me.Button36.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(560, 411)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.ClientSize = New System.Drawing.Size(589, 411)
+        Me.Controls.Add(Me.Button36)
+        Me.Controls.Add(Me.Button35)
+        Me.Controls.Add(Me.Button34)
+        Me.Controls.Add(Me.Button33)
+        Me.Controls.Add(Me.Button32)
+        Me.Controls.Add(Me.Button31)
+        Me.Controls.Add(Me.radioButtonDegrees)
+        Me.Controls.Add(Me.radioButtonRadians)
         Me.Controls.Add(Me.Button30)
         Me.Controls.Add(Me.Button29)
         Me.Controls.Add(Me.Button28)
@@ -464,7 +536,13 @@ Partial Class Form1
     Friend WithEvents Button28 As System.Windows.Forms.Button
     Friend WithEvents Button29 As System.Windows.Forms.Button
     Friend WithEvents Button30 As System.Windows.Forms.Button
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
+    Friend WithEvents radioButtonRadians As System.Windows.Forms.RadioButton
+    Friend WithEvents radioButtonDegrees As System.Windows.Forms.RadioButton
+    Friend WithEvents Button31 As System.Windows.Forms.Button
+    Friend WithEvents Button32 As System.Windows.Forms.Button
+    Friend WithEvents Button33 As System.Windows.Forms.Button
+    Friend WithEvents Button34 As System.Windows.Forms.Button
+    Friend WithEvents Button35 As System.Windows.Forms.Button
+    Friend WithEvents Button36 As System.Windows.Forms.Button
 
 End Class

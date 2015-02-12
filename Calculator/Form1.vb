@@ -1,10 +1,13 @@
 ﻿Public Class Form1
     'The two numbers to be calculated and the answer
     Dim number1, number2, answer As Double
-    ' Tells the program to go the next input box
+    ' Tells the program to go the next input box, false is number1, true is number2
     Dim numberInput As Boolean
     ' 1 is add, 2 is subtract, 3 is multiply, 4 is divide
     Dim operatorIdentifier As Single
+    ' False is degrees, true is radians
+    Dim angleMode As Boolean
+
 
 
 
@@ -142,7 +145,7 @@
             TextBox1.Text = number2
         End If
 
-        
+
     End Sub
 
     Private Sub Button17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button17.Click
@@ -444,7 +447,110 @@
         End If
     End Sub
 
-    Private Sub RadioButton1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadioButton1.CheckedChanged
+    Private Sub radioButtonDegrees_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radioButtonDegrees.CheckedChanged
+        If radioButtonDegrees.Checked = True Then
+            angleMode = False
+        End If
+
+        If radioButtonDegrees.Checked = False Then
+            angleMode = True
+        End If
+    End Sub
+
+    Private Sub radioButtonRadians_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radioButtonRadians.CheckedChanged
+        If radioButtonRadians.Checked = True Then
+            angleMode = True
+        End If
+
+        If radioButtonRadians.Checked = False Then
+            angleMode = False
+        End If
+    End Sub
+
+    Private Sub Button31_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button31.Click
+        If numberInput = False Then
+            number1 = 1 / number1
+            TextBox1.Text = number1
+        End If
+
+        If numberInput = True Then
+            number2 = 1 / number2
+            TextBox1.Text = number2
+        End If
+    End Sub
+
+    Private Sub Button33_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button32.Click
+
+        If numberInput = False Then
+            number1 = 0
+            TextBox1.Text = number1
+        End If
+
+        If numberInput = True Then
+            number2 = 0
+            TextBox1.Text = number2
+        End If
+    End Sub
+
+    Private Sub Button32_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button33.Click
+        If numberInput = False Then
+
+            number1 = (5 / 9) * (number1 - 32)
+
+            TextBox1.Text = number1
+        End If
+
+        If numberInput = True Then
+            number2 = (5 / 9) * (number2 - 32)
+            TextBox1.Text = number2
+        End If
+
+
+    End Sub
+
+    Private Sub Button34_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button34.Click
+        If numberInput = False Then
+
+            number1 = (5 / 9) * (number1 - 32)
+
+            TextBox1.Text = number1
+        End If
+
+        If numberInput = True Then
+            number2 = (5 / 9) * (number2 - 32)
+            TextBox1.Text = number2
+        End If
+
+
+    End Sub
+
+    Private Sub Button35_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button35.Click
+        If numberInput = False Then
+
+            number1 = number1 * 12
+
+            TextBox1.Text = number1
+        End If
+
+        If numberInput = True Then
+            number2 = number2 * 12
+            TextBox1.Text = number2
+        End If
+
+    End Sub
+
+    Private Sub Button36_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button36.Click
+        If numberInput = False Then
+
+            number1 = number1 / 12
+
+            TextBox1.Text = number1
+        End If
+
+        If numberInput = True Then
+            number2 = number2 / 12
+            TextBox1.Text = number2
+        End If
 
     End Sub
 End Class
