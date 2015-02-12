@@ -73,6 +73,7 @@
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+
         If numberInput = False Then
             number1 = number1 * 10
             number1 = number1 + 5
@@ -553,5 +554,21 @@
             TextBox1.Text = number2
         End If
 
+    End Sub
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Size = New System.Drawing.Size(370, 470)
+    End Sub
+
+    Private Sub ToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem1.Click
+        Me.Size = New System.Drawing.Size(370, 470)
+    End Sub
+
+    Private Sub ScientificToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ScientificToolStripMenuItem.Click
+        Me.Size = New System.Drawing.Size(500, 470)
+    End Sub
+
+    Private Sub ConversionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConversionToolStripMenuItem.Click
+        Me.Size = New System.Drawing.Size(625, 470)
     End Sub
 End Class
