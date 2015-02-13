@@ -218,28 +218,62 @@
     End Sub
     'Add, Subtract, Multiply, Subtract buttons
     Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
-        numberInput = True
-        operatorIdentifier = 1
-        TextBox1.Text = 0
+        If numberInput = True Then
+            answer = number1 + number2
+            number1 = answer
+            number2 = 0
+            TextBox1.Text = 0
+        ElseIf numberInput = False Then
+            numberInput = True
+            operatorIdentifier = 1
+            TextBox1.Text = 0
+        End If
+
+
+
+
 
     End Sub
 
     Private Sub Button13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button13.Click
-        numberInput = True
-        operatorIdentifier = 2
-        TextBox1.Text = 0
+        If numberInput = True Then
+            answer = number1 - number2
+            number1 = answer
+            number2 = 0
+            TextBox1.Text = 0
+        ElseIf numberInput = False Then
+            numberInput = True
+            operatorIdentifier = 2
+            TextBox1.Text = 0
+        End If
+
+
     End Sub
 
     Private Sub Button14_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button14.Click
-        numberInput = True
-        operatorIdentifier = 3
-        TextBox1.Text = 0
+        If numberInput = True Then
+            answer = number1 * number2
+            number1 = answer
+            number2 = 0
+            TextBox1.Text = 0
+        ElseIf numberInput = False Then
+            numberInput = True
+            operatorIdentifier = 3
+            TextBox1.Text = 0
+        End If
     End Sub
 
     Private Sub Button15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button15.Click
-        numberInput = True
-        operatorIdentifier = 4
-        TextBox1.Text = 0
+        If numberInput = True Then
+            answer = number1 / number2
+            number1 = answer
+            number2 = 0
+            TextBox1.Text = 0
+        ElseIf numberInput = False Then
+            numberInput = True
+            operatorIdentifier = 4
+            TextBox1.Text = 0
+        End If
     End Sub
     'Clears the labels and input variables
     Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
@@ -255,9 +289,16 @@
 
 
     Private Sub Button16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button16.Click
-        numberInput = True
-        operatorIdentifier = 5
-        TextBox1.Text = 0
+        If numberInput = True Then
+            answer = number1 ^ number2
+            number1 = answer
+            number2 = 0
+            TextBox1.Text = 0
+        ElseIf numberInput = False Then
+            numberInput = True
+            operatorIdentifier = 5
+            TextBox1.Text = 0
+        End If
     End Sub
 
     Private Sub Button20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button20.Click
@@ -406,9 +447,20 @@
 
     Private Sub Button29_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button29.Click
 
-        numberInput = True
-        operatorIdentifier = 6
-        TextBox1.Text = 0
+
+
+        If numberInput = True Then
+            answer = number1 ^ (1 / number2)
+            number1 = answer
+            number2 = 0
+            TextBox1.Text = 0
+        ElseIf numberInput = False Then
+            numberInput = True
+            operatorIdentifier = 6
+            TextBox1.Text = 0
+        End If
+
+
 
     End Sub
 
@@ -570,5 +622,34 @@
 
     Private Sub ConversionToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConversionToolStripMenuItem.Click
         Me.Size = New System.Drawing.Size(625, 470)
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
+        MsgBox("Written by Danny Van Stemp" & vbCrLf & "©2015" & vbCrLf & "www.adsgames.net")
+    End Sub
+
+
+    Private Sub CalculatorsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CalculatorsToolStripMenuItem.Click
+        Me.Size = New System.Drawing.Size(755, 470)
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Button37_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button37.Click
+        TextBox4.Text = 2 * 3.14159265359 * TextBox3.Text ^ 2
+    End Sub
+
+    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
+
+    End Sub
+
+    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
+
     End Sub
 End Class

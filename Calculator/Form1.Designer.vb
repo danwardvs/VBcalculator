@@ -63,10 +63,20 @@ Partial Class Form1
         Me.Button36 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.VToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ScientificToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConversionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CalculatorsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button37 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -467,22 +477,16 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(609, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(738, 24)
         Me.MenuStrip1.TabIndex = 51
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'VToolStripMenuItem
         '
-        Me.VToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ScientificToolStripMenuItem, Me.ConversionToolStripMenuItem})
+        Me.VToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ScientificToolStripMenuItem, Me.ConversionToolStripMenuItem, Me.CalculatorsToolStripMenuItem})
         Me.VToolStripMenuItem.Name = "VToolStripMenuItem"
         Me.VToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.VToolStripMenuItem.Text = "View"
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.HelpToolStripMenuItem.Text = "Help"
         '
         'ToolStripMenuItem1
         '
@@ -502,11 +506,104 @@ Partial Class Form1
         Me.ConversionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ConversionToolStripMenuItem.Text = "Conversion"
         '
+        'CalculatorsToolStripMenuItem
+        '
+        Me.CalculatorsToolStripMenuItem.Name = "CalculatorsToolStripMenuItem"
+        Me.CalculatorsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CalculatorsToolStripMenuItem.Text = "Calculators"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.AboutToolStripMenuItem.Text = "About"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(619, 55)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.TabIndex = 53
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(619, 104)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 54
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(619, 154)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.TabIndex = 55
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(619, 36)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(40, 13)
+        Me.Label1.TabIndex = 56
+        Me.Label1.Text = "Radius"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(619, 86)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(38, 13)
+        Me.Label2.TabIndex = 57
+        Me.Label2.Text = "Height"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(621, 138)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(69, 13)
+        Me.Label3.TabIndex = 58
+        Me.Label3.Text = "Surface Area"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Surface Area of Cylinder", "Surface Area of Pyramid"})
+        Me.ComboBox1.Location = New System.Drawing.Point(619, 216)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox1.TabIndex = 60
+        '
+        'Button37
+        '
+        Me.Button37.Location = New System.Drawing.Point(619, 186)
+        Me.Button37.Name = "Button37"
+        Me.Button37.Size = New System.Drawing.Size(100, 23)
+        Me.Button37.TabIndex = 61
+        Me.Button37.Text = "Calculate"
+        Me.Button37.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(609, 431)
+        Me.ClientSize = New System.Drawing.Size(738, 431)
+        Me.Controls.Add(Me.Button37)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Button36)
         Me.Controls.Add(Me.Button35)
         Me.Controls.Add(Me.Button34)
@@ -601,5 +698,15 @@ Partial Class Form1
     Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ScientificToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConversionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AboutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents CalculatorsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button37 As System.Windows.Forms.Button
 
 End Class
