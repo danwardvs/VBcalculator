@@ -477,7 +477,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(738, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(809, 24)
         Me.MenuStrip1.TabIndex = 51
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -491,25 +491,25 @@ Partial Class Form1
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(134, 22)
         Me.ToolStripMenuItem1.Text = "Standard"
         '
         'ScientificToolStripMenuItem
         '
         Me.ScientificToolStripMenuItem.Name = "ScientificToolStripMenuItem"
-        Me.ScientificToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ScientificToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
         Me.ScientificToolStripMenuItem.Text = "Scientific"
         '
         'ConversionToolStripMenuItem
         '
         Me.ConversionToolStripMenuItem.Name = "ConversionToolStripMenuItem"
-        Me.ConversionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ConversionToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
         Me.ConversionToolStripMenuItem.Text = "Conversion"
         '
         'CalculatorsToolStripMenuItem
         '
         Me.CalculatorsToolStripMenuItem.Name = "CalculatorsToolStripMenuItem"
-        Me.CalculatorsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CalculatorsToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
         Me.CalculatorsToolStripMenuItem.Text = "Calculators"
         '
         'HelpToolStripMenuItem
@@ -529,21 +529,21 @@ Partial Class Form1
         '
         Me.TextBox3.Location = New System.Drawing.Point(619, 55)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(167, 20)
         Me.TextBox3.TabIndex = 53
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(619, 104)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(167, 20)
         Me.TextBox2.TabIndex = 54
         '
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(619, 154)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(167, 20)
         Me.TextBox4.TabIndex = 55
         '
         'Label1
@@ -579,14 +579,14 @@ Partial Class Form1
         Me.ComboBox1.Items.AddRange(New Object() {"Surface Area of Cylinder", "Surface Area of Pyramid"})
         Me.ComboBox1.Location = New System.Drawing.Point(619, 216)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(167, 21)
         Me.ComboBox1.TabIndex = 60
         '
         'Button37
         '
         Me.Button37.Location = New System.Drawing.Point(619, 186)
         Me.Button37.Name = "Button37"
-        Me.Button37.Size = New System.Drawing.Size(100, 23)
+        Me.Button37.Size = New System.Drawing.Size(167, 23)
         Me.Button37.TabIndex = 61
         Me.Button37.Text = "Calculate"
         Me.Button37.UseVisualStyleBackColor = True
@@ -595,7 +595,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(738, 431)
+        Me.ClientSize = New System.Drawing.Size(809, 431)
         Me.Controls.Add(Me.Button37)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label3)

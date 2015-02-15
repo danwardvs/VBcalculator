@@ -610,6 +610,9 @@
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Size = New System.Drawing.Size(370, 470)
+        ComboBox1.SelectedIndex = 0
+
+
     End Sub
 
     Private Sub ToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem1.Click
@@ -630,15 +633,15 @@
 
 
     Private Sub CalculatorsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CalculatorsToolStripMenuItem.Click
-        Me.Size = New System.Drawing.Size(755, 470)
-    End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
-
+        Me.Size = New System.Drawing.Size(825, 470)
     End Sub
 
     Private Sub Button37_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button37.Click
-        TextBox4.Text = 2 * 3.14159265359 * TextBox3.Text ^ 2
+        If ComboBox1.SelectedIndex = 0 Then
+            TextBox4.Text = 4 * 3.14159265359 * TextBox3.Text ^ 2
+        End If
+
+
     End Sub
 
     Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
@@ -650,6 +653,35 @@
     End Sub
 
     Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
+        If ComboBox1.SelectedIndex = 0 Then
+            Label1.Text = "Radius"
+            Label2.Text = "Height"
+            Label3.Text = "Surface Area"
+
+        End If
+
+        If ComboBox1.SelectedIndex = 0 Then
+            Label1.Text = "Radius"
+            Label2.Text = "Height"
+            Label3.Text = "Surface Area"
+
+        End If
+
+    End Sub
+
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
 
     End Sub
 End Class
