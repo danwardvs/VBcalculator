@@ -638,7 +638,11 @@
 
     Private Sub Button37_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button37.Click
         If ComboBox1.SelectedIndex = 0 Then
-            TextBox4.Text = 4 * 3.14159265359 * TextBox3.Text ^ 2
+            TextBox4.Text = 2 * 3.14159265359 * TextBox3.Text ^ 2 + 2 * 3.14159265359 * TextBox3.Text * TextBox2.Text
+        End If
+
+        If ComboBox1.SelectedIndex = 1 Then
+            TextBox4.Text = (TextBox2.Text * TextBox3.Text) / 2
         End If
 
 
@@ -664,10 +668,10 @@
 
         End If
 
-        If ComboBox1.SelectedIndex = 0 Then
-            Label1.Text = "Radius"
+        If ComboBox1.SelectedIndex = 1 Then
+            Label1.Text = "Base"
             Label2.Text = "Height"
-            Label3.Text = "Surface Area"
+            Label3.Text = "Area"
 
         End If
 

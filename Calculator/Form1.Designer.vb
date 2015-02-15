@@ -576,7 +576,7 @@ Partial Class Form1
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Surface Area of Cylinder", "Surface Area of Pyramid"})
+        Me.ComboBox1.Items.AddRange(New Object() {"Surface Area of Cylinder", "Area of Triangle"})
         Me.ComboBox1.Location = New System.Drawing.Point(619, 216)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(167, 21)
