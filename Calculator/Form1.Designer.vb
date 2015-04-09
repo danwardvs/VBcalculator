@@ -75,7 +75,7 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbFormulaChooser = New System.Windows.Forms.ComboBox()
         Me.Button37 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -534,6 +534,7 @@ Partial Class Form1
         '
         'TextBox2
         '
+        Me.TextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox2.Location = New System.Drawing.Point(619, 104)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(167, 20)
@@ -573,14 +574,14 @@ Partial Class Form1
         Me.Label3.TabIndex = 58
         Me.Label3.Text = "Surface Area"
         '
-        'ComboBox1
+        'cmbFormulaChooser
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Surface Area of Cylinder", "Area of Triangle"})
-        Me.ComboBox1.Location = New System.Drawing.Point(619, 216)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(167, 21)
-        Me.ComboBox1.TabIndex = 60
+        Me.cmbFormulaChooser.FormattingEnabled = True
+        Me.cmbFormulaChooser.Items.AddRange(New Object() {"Surface Area of Cylinder", "Area of Triangle", "Area of Circle", "Area of Rectangle"})
+        Me.cmbFormulaChooser.Location = New System.Drawing.Point(619, 216)
+        Me.cmbFormulaChooser.Name = "cmbFormulaChooser"
+        Me.cmbFormulaChooser.Size = New System.Drawing.Size(167, 21)
+        Me.cmbFormulaChooser.TabIndex = 60
         '
         'Button37
         '
@@ -597,7 +598,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(809, 431)
         Me.Controls.Add(Me.Button37)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbFormulaChooser)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -706,7 +707,7 @@ Partial Class Form1
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbFormulaChooser As System.Windows.Forms.ComboBox
     Friend WithEvents Button37 As System.Windows.Forms.Button
 
 End Class

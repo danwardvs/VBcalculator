@@ -610,7 +610,7 @@
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Size = New System.Drawing.Size(370, 470)
-        ComboBox1.SelectedIndex = 0
+        cmbFormulaChooser.SelectedIndex = 0
 
 
     End Sub
@@ -637,11 +637,11 @@
     End Sub
 
     Private Sub Button37_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button37.Click
-        If ComboBox1.SelectedIndex = 0 Then
+        If cmbFormulaChooser.SelectedIndex = 0 Then
             TextBox4.Text = 2 * 3.14159265359 * TextBox3.Text ^ 2 + 2 * 3.14159265359 * TextBox3.Text * TextBox2.Text
         End If
 
-        If ComboBox1.SelectedIndex = 1 Then
+        If cmbFormulaChooser.SelectedIndex = 1 Then
             TextBox4.Text = (TextBox2.Text * TextBox3.Text) / 2
         End If
 
@@ -660,20 +660,24 @@
 
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
-        If ComboBox1.SelectedIndex = 0 Then
+    Private Sub cmbFormulaChooser_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbFormulaChooser.SelectedIndexChanged
+        If cmbFormulaChooser.SelectedIndex = 0 Then
             Label1.Text = "Radius"
             Label2.Text = "Height"
             Label3.Text = "Surface Area"
 
         End If
 
-        If ComboBox1.SelectedIndex = 1 Then
+        If cmbFormulaChooser.SelectedIndex = 1 Then
             Label1.Text = "Base"
             Label2.Text = "Height"
             Label3.Text = "Area"
 
         End If
+
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
 
     End Sub
 
